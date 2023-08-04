@@ -47,6 +47,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 # Обучение модели
 model.fit(X_padded, y_one_hot, epochs=10, batch_size=32)
 
+model.save('my_model.h5')  #сохранение обученой модели
 # Тесты
 X_test = ['Какая классная погода', 'Где ты этому научился?','Это моя любимая песня','Сколько тебе лет?','Какой у тебя любимый фильм?','Какая твоя любимая книга?','Когда ты последний раз ел?','Есть ли у тебя животное?']
 X_test_encoded = tokenizer.texts_to_sequences(X_test)
