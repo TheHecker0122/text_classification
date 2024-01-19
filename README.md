@@ -13,4 +13,3 @@ python3 model.py
 
 # Крайне не рекомендую использовать в качестве основы текущий датасет.
 
-Ps мой первый проект на github // my first project in github
